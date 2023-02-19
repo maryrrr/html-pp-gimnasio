@@ -5,14 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los gatitos</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            margin: 0;
+
+        }
+        .menu  ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        }
+        menu ul li{
+        display: inline-block;
+        }
+        .menu ul li a {
+            display: block;
+        padding: 0.5rem 1rem;
+        border-radius: 5 px solid blue;
+        background-color: #dddddd;
+        }
+        .menu ul li a:hover {
+            background-color: 4a4a4a;
+
+        }
+        img {
+         border-radius: 25px;
+        background:gray;
+        padding: 20px;
+        width: 450px;
+        height: 250px;
+        }
+
+    </style>
 </head>
 <body>
-    <header style="background-color: gray;"> <img src="\image_cat\logo1.png" alt="logo_cat" width="5%" >
+    <header class="header">
     <nav class="menu">
         <ul>
-            <a href="index.html">Imagenes</a>
-            <a href="index.html">Video</a>
-            <a href="index.html"> Sonido</a>
+            <li><a href="index.html">Imagenes </a></li>
+            <li><a href="index.html">Video </a></li>
+            <li><a href="index.html"> Sonido </a></li>
         </ul>
     </nav>
     </header>
@@ -34,13 +70,11 @@
     <section><strong> <h2>Audio</h2></strong>
         <p>
         <audio controls>
-            <source src="audio\cardinal-37075.mp3" type="audio.mp3">
+            <source src="audio\cardinal-37075.mp3">
         </audio>
         <audio controls>
-            <source src="audio\children-logo-116101.mp3" type="audio.mp3">
+            <source src="audio\children-logo-116101.mp3">
          </p></audio>
-        
-    
     </section>
 
 </body>
