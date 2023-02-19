@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /><
     <title>Los gatitos</title>
     <style>
         body{
@@ -13,25 +14,36 @@
             margin: 0;
 
         }
+        .menu {
+            background-color: burlywood;
+            height: 80px;
+            width: 100%;
+            display: inline-block;
+            justify-content: space-between;
+            padding: 5 rem;
+
+        }
         .menu  ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        .menu ul li{
+            padding: 10px 60px;
+            position: relative;
 
         }
-        menu ul li{
-        display: inline-block;
-        }
-        .menu ul li a {
-            display: block;
-        padding: 0.5rem 1rem;
-        border-radius: 5 px solid blue;
-        background-color: #dddddd;
-        }
-        .menu ul li a:hover {
+
+        .menu ul li a{
             background-color: 4a4a4a;
+            text-decoration: none; 
+            font-size: 20px;
+            transition: all 0.3s;
 
         }
+        .menu ul li a:hover{
+            color:gray;
+        }
+
         img {
          border-radius: 25px;
         background:gray;
@@ -43,7 +55,7 @@
     </style>
 </head>
 <body>
-    <header class="header">
+    <div class="menu">
     <nav class="menu">
         <ul>
             <li><a href="index.html">Imagenes </a></li>
@@ -51,7 +63,7 @@
             <li><a href="index.html"> Sonido </a></li>
         </ul>
     </nav>
-    </header>
+</div>
     <section><strong><h2> Imagenes</h2></strong>
         <p><img src="image_cat\cat-3266673__340.jpg" alt="gatito">
             <img src="image_cat\cats-eyes-2944820__340.jpg" alt="gatito negro">
@@ -59,7 +71,7 @@
     </section>
     <section><strong> <h2>Video</h2></strong>
         <p>
-        <video width="450" height="340" controls>
+        <video width="450" height="340" controls>  
             <source src="video\Pexels Videos 2711092.mp4" type="video/mp4">
         </video>
         <video width="450" height="340" controls>
