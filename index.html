@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tabla </title>
     <style>
         body{
@@ -14,33 +15,63 @@
 
         }
         .menu {
-            background-color: burlywood;
-            height: 80px;
-            width: 100%;
-            display: inline-block;
-            justify-content: space-between;
-            padding: 5 rem;
-
-        }
-        .menu  ul{
-            list-style: none;
-            display: flex;
-        }
-        .menu ul li{
-            padding: 10px 60px;
-            position: relative;
-
+            overflow: hidden;
+            background-color: #333;
         }
 
-        .menu ul li a{
-            background-color: 4a4a4a;
+        .menu a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            font-size: 20px;
-            transition: all 0.3s;
-
         }
-        .menu ul li a:hover{
-            color:gray;
+
+        .dropdown {
+             float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .menu a:hover, .dropdown:hover .dropbtn {
+            background-color:maroon;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: gray;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         img {
@@ -62,18 +93,20 @@
         }
     </style>
 </head>
-<p>
     <div class="menu">
-        <nav class="menu">
-            <ul>
-                <li><a href="gatitos.html">Imagenes </a></li>
-                <li><a href="gatitos.html">Video </a></li>
-                <li><a href="gatitos.html"> Sonido </a></li>
-            </ul>
-        </nav>
+                <a href="gatitos.html">Imagenes </a>
+                <a href="gatitos.html">Video </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Sonido</button>
+                    <i class="fa fa-caret down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="gatitos.html">Gatitos1 </a>
+                <a href="gatitos.html"> Gatitos2</a>
+        </div>
     </div>
+</div>
 
-    
      <p><table style="width: 80%;">
         <tr>
             <th colspan="2"; ALIGN="left"> <strong> Invoice &#35;123456789</strong></th>
